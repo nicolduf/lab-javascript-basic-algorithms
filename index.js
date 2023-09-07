@@ -47,7 +47,7 @@ console.log(hacker1Capitals);
 
 
 
-let nameReversed = ""
+let nameReversed = "";
 
 for (let i = hacker2.length - 1; i >= 0; i--){
 const char = hacker2 [i];
