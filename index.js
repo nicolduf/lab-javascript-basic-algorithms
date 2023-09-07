@@ -59,18 +59,47 @@ console.log(nameReversed);
 
 
 
-if (hacker1 > hacker2) {
 
-console.log (`The driver's name goes first.`)
-  
+
+if (hacker1<hacker2){
+  console.log("The driver's name goes first.")
+}
+else if (hacker1>hacker2) {
+  console.log("Yo, the navigator goes first, definitely.")  
 } 
+else  {
+  console.log("What?! You both have the same name?") 
+}
 
-else if (hacker1 < hacker2) {
 
-console.log (`Yo, the navigator goes first definitely.`)
 
-} 
+
+
+
+let longest = ""
+if(hacker1.length >= hacker2.length){
+  longest = hacker1
+}
+
 else {
+  longest = hacker2
+}
 
-console.log (`What?! You both have the same name?`)
+for(let i = 0; i < longest.length; i++){
+  const hacker1Letter = hacker1[i]
+  const hacker2Letter = hacker2[i]
+  if (hacker1 === hacker2){
+  console.log("What?! You both have the same name?")
+  break
+  }
+
+  if(hacker1Letter < hacker2Letter || hacker1Letter === undefined){
+    console.log("The driver's name goes first")
+    break
+  }
+
+  else if (hacker1Letter < hacker2Letter ){
+    console.log("Yo, the navigator goes first, definetly")
+    break
+  }
 }
