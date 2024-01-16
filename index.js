@@ -6,13 +6,7 @@
 
 // Iteration 3: Loops
 
-let hacker1 = 'Nicole'
 
-console.log (`the driver's name is ${hacker1}`)
-
-let hacker2 = 'Edd'
-
-console.log (`the navigator's name is ${hacker2}`)
 
 
 
